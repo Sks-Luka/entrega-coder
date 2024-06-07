@@ -1,0 +1,35 @@
+
+<h2>Socket Cliente!</h2>
+
+<form id="createProductForm">
+    <p>Ingresar datos del producto:</p>
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Title">
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" placeholder="Category">
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" placeholder="Description">
+    
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="Price">
+    
+        <label for="code">Code:</label>
+        <input type="text" id="code" placeholder="Code">
+    
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" placeholder="Stock">
+    
+        <button type="submit" id="addProduct">Agregar</button>
+        <button  id="deleteprod">Eliminar</button>
+
+    </div>
+</form>
+<br/>
+
+<p id="products"></p>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/index.js"></script>
